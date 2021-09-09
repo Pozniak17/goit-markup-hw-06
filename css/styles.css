@@ -744,6 +744,66 @@ section-title - універсальний клас для h2 */
   margin-right: 70px;
 }
 
+.third-footer {
+  margin-left: 93px;
+}
+
+.third-footer-wrap {
+  margin-top: 20px;
+}
+
+.third-footer-input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  padding-left: 16px;
+}
+
+.footer-input input::placeholder {
+  padding: 15px 16px;
+}
+
+.third-footer-wrap {
+  display: flex;
+}
+
+.third-footer-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: var(--primary-bg-color);
+  background-color: var(--accent);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  margin-left: 12px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  border: transparent;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.third-footer-button:hover,
+.third-footer-button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.third-footer-icon {
+  margin-left: 10px;
+}
+
 /* Модальне вікно */
 .backdrop {
   position: fixed;
