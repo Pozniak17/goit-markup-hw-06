@@ -847,13 +847,11 @@ section-title - універсальний клас для h2 */
 .modal-title {
   display: block;
   color: var(--title-text-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-
   margin-bottom: 12px;
 }
 
@@ -868,6 +866,7 @@ section-title - універсальний клас для h2 */
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 40px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-field {
