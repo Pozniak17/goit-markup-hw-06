@@ -845,7 +845,6 @@ section-title - універсальний клас для h2 */
 }
 
 .modal-title {
-  display: block;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 20px;
@@ -916,6 +915,7 @@ section-title - універсальний клас для h2 */
 .check-label {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .icon-check {
@@ -936,6 +936,26 @@ section-title - універсальний клас для h2 */
 
 .modal-link {
   color: var(--accent);
+  margin-left: 5px;
+}
+
+.model-form-text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: #757575;
+}
+
+.agree {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
 
 /* .check-label::before {
