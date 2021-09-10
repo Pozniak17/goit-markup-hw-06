@@ -937,6 +937,10 @@ section-title - універсальний клас для h2 */
   border: transparent;
 }
 
+.modal-link {
+  color: var(--accent);
+}
+
 /* .check-label::before {
   content: "";
   display: block;
