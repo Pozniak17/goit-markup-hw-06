@@ -881,11 +881,62 @@ section-title - універсальний клас для h2 */
   margin-bottom: 4px;
 }
 
+/* Фокусы */
+
+.checkbox:checked + .check-label > .icon-check {
+  background-color: var(--accent);
+  border: none;
+  border: transparent;
+}
+
+.modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent);
+}
+
+.modal-comment:hover::placeholder,
+.modal-comment:focus::placeholder {
+  color: #2196f3;
+}
+
+.modal-comment:hover,
+.modal-comment:focus {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-comment:hover .modal-check-label,
+.modal-comment:focus .modal-check-label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 30px;
+}
+
+.modal-icon-check {
+  display: block;
+}
+
+.checkbox:hover + .check-label > .icon-check,
+.checkbox:focus + .check-label > .icon-check {
+  border-color: var(--accent);
+}
+
+.checkbox:checked + .check-label > .icon-check {
+  background-color: var(--accent);
+  border: none;
+  border: transparent;
+}
+/* Фокусы */
+
 .modal-form-icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .modal-comment {
@@ -929,11 +980,6 @@ section-title - універсальний клас для h2 */
   justify-content: center;
 }
 
-.checkbox:checked + .check-label .icon-check {
-  background: var(--accent);
-  border: transparent;
-}
-
 .modal-link {
   color: var(--accent);
   margin-left: 5px;
@@ -956,6 +1002,10 @@ section-title - універсальний клас для h2 */
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+
+.modal-form-input:focus + .model-form-label {
+  color: var(--accent);
 }
 
 /* .check-label::before {
@@ -982,4 +1032,15 @@ section-title - універсальний клас для h2 */
   position: absolute;
   top: 8px;
   right: 8px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exit-button:hover,
+.exit-button:focus,
+.exit-button .exit-icon:hover,
+.exit-button .exit-icon:focus {
+  fill: var(--accent);
+  border-color: var(--accent);
 }
